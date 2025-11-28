@@ -1,4 +1,5 @@
 import math
+import unittest
 
 def area(r):
     """
@@ -26,3 +27,29 @@ def perimeter(r):
     """
 
     return 2 * math.pi * r
+
+
+class CircleTestCase(unittest.TestCase):
+    def test_zero_area(self):
+        res = area(0)
+        self.assertEqual(res, 0)
+    
+    def test_normal_area(self):
+        res = area(5)
+        self.assertAlmostEqual(res, math.pi * 25)
+    
+    def test_float_area(self):
+        res = area(2.5)
+        self.assertAlmostEqual(res, math.pi * 6.25)
+    
+    def test_zero_perimeter(self):
+        res = perimeter(0)
+        self.assertEqual(res, 0)
+    
+    def test_normal_perimeter(self):
+        res = perimeter(5)
+        self.assertAlmostEqual(res, 2 * math.pi * 5)
+    
+    def test_float_perimeter(self):
+        res = perimeter(2.5)
+        self.assertAlmostEqual(res, 2 * math.pi * 2.5)
