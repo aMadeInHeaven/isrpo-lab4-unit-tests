@@ -180,3 +180,6 @@ result = area(7, 3)  # 21
 | `66d876f` | add circle.py with perimeter and area functions |
 | `5ffa81f` | add square.py with perimeter and area functions |
 | `dda9884` | add triangle.py with perimeter and area functions |
+| `751c1c4` | add gitignore |
+| `ac62e30` | add unit tests |
+| `19a5e03` | add docs |
