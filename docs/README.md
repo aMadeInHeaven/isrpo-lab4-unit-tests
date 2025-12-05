@@ -183,3 +183,4 @@ result = area(7, 3)  # 21
 | `751c1c4` | add gitignore |
 | `ac62e30` | add unit tests |
 | `19a5e03` | add docs |
+| `9407e36` | add negative tests |
