@@ -56,3 +56,11 @@ class TriangleTestCase(unittest.TestCase):
     def test_float_perimeter(self):
         res = perimeter(2.5, 3.5, 4.5)
         self.assertAlmostEqual(res, 10.5)
+
+    def test_neg_perimeter(self):
+        res = perimeter(-2.5, -3.5, -4.5)
+        self.assertAlmostEqual(res, -10.5)
+
+    def test_neg_area(self):
+        res = area(-4, 6)
+        self.assertEqual(res, -12)
